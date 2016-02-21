@@ -1,0 +1,30 @@
+[data-pie-id] > *:nth-child(7n+1), [data-bar-id] > *:nth-child(7n+1), [data-line-id] > *:nth-child(7n+1) {
+  color: #e964a1; }
+[data-pie-id] > *:nth-child(7n+2), [data-bar-id] > *:nth-child(7n+2), [data-line-id] > *:nth-child(7n+2) {
+  color: #e5478f; }
+[data-pie-id] > *:nth-child(7n+3), [data-bar-id] > *:nth-child(7n+3), [data-line-id] > *:nth-child(7n+3) {
+  color: #e22d7f; }
+[data-pie-id] > *:nth-child(7n+4), [data-bar-id] > *:nth-child(7n+4), [data-line-id] > *:nth-child(7n+4) {
+  color: #d61e72; }
+[data-pie-id] > *:nth-child(7n+5), [data-bar-id] > *:nth-child(7n+5), [data-line-id] > *:nth-child(7n+5) {
+  color: #c01b66; }
+[data-pie-id] > *:nth-child(7n+6), [data-bar-id] > *:nth-child(7n+6), [data-line-id] > *:nth-child(7n+6) {
+  color: #ad185c; }
+[data-pie-id] > *:nth-child(7n+7), [data-bar-id] > *:nth-child(7n+7), [data-line-id] > *:nth-child(7n+7) {
+  color: #9c1653; }
+
+#pie, #donut, #bar {
+  max-height: 450px; }
+
+svg {
+  width: 100%;
+  height: auto; }
+
+.tooltip {
+  margin-left: -5px;
+  border-radius: 3px;
+  padding: 5px; }
+
+ul[data-pie-id] {
+  list-style: none;
+  padding: 10px; }

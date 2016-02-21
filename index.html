@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carl</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+
+</head>
+<body>
+
+  <div id="nextbutton" class="fixed hide"> <!-- NOTE: Remove the hide class to show the conversation controls. -->
+    <div class="row" id="conversation-controls">
+      <div class="medium-12 medium-centered columns text-center">
+        <a href="#" class="button radius" onclick="nextConversation();">Volgende gesprek</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-2 columns"></div>
+    <div class="medium-8 medium-centered columns"><h1 class="text-center">Carl</h1></div>
+    <div class="medium-2 columns"></div>
+  </div>
+
+  <div class="row" id="chat-row">
+    <div class="medium-2 columns"></div>
+    <div class="medium-8 medium-centered columns" id="chat"></div>
+    <div class="medium-2 columns"></div>
+  </div>
+
+  <footer class="">
+
+    <div class="row" id="input-row">
+      <div class="medium-12 medium-centered columns">
+        <div class="row collapse postfix-radius" id="input-container">
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="choice-buttons">
+      <div class="medium-12 medium-centered columns text-center">
+        <ul class="stack-for-small radius button-group" id="choices"></ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+
+  <script src="js/async.js"></script>
+  <script src="js/app.js"></script>
+
+  <script type="text/javascript">
+  function nextConversation() {
+    $('#nextbutton').addClass("hide");
+
+    startConversation('conversation2.js');
+
+    return false;
+  }
+
+  $(function() {
+    $(document).foundation();
+
+    startConversation("conversation.js");
+  });
+  </script>
+
+</body>
+</html>

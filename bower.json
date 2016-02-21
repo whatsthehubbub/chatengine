@@ -1,0 +1,10 @@
+{
+  "name": "foundation-libsass-template",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation",
+    "jquery-placeholder": "~2.1.2"
+  },
+  "resolutions": {
+    "jquery-placeholder": "~2.1.2"
+  }
+}

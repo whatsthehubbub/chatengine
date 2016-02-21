@@ -1,0 +1,137 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+#nextbutton {
+	background-color: $color2;
+}
+
+#conversation-controls {
+	.button {
+		margin-top: 1rem;
+		background-color: $color4;
+		color: $color1;
+	}
+}
+
+#chat-row.choices-1 {
+	padding-bottom: rem-calc((1 * 51) + 36);
+}
+#chat-row.choices-2 {
+	padding-bottom: rem-calc((2 * 51) + 36);
+}
+#chat-row.choices-3 {
+	padding-bottom: rem-calc((3 * 51) + 36);
+}
+#chat-row.choices-4 {
+	padding-bottom: rem-calc((4 * 51) + 36);
+}
+#chat-row.choices-5 {
+	padding-bottom: rem-calc((5 * 51) + 36);
+}
+#chat-row.choices-6 {
+	padding-bottom: rem-calc((6 * 51) + 36);
+}
+#chat-row.choices-7 {
+	padding-bottom: rem-calc((7 * 51) + 36);
+}
+#chat-row.choices-8 {
+	padding-bottom: rem-calc((8 * 51) + 36);
+}
+
+footer {
+	position: fixed; 
+	bottom: 0;
+	z-index: 100000;
+	width: 100%;
+	background-color: $color4;
+}
+
+footer > div {
+	padding-top: 1rem;
+	margin-bottom: 1rem;
+} 
+
+.call-bubble {
+	@include panel(
+		$bg: transparent,
+	    $padding: 0,
+	    $adjust: true
+	);
+	color: $color1;
+    border: rem-calc(20) solid transparent;
+    -webkit-border-image: url(../images/call-bubble.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/call-bubble.png) round; /* Opera 11-12.1 */
+    border-image-source: url(../images/call-bubble.png) round;
+    border-image-slice: 20% fill;
+    background-clip: padding-box;
+}
+
+.response-bubble {
+	@extend .call-bubble;	
+	color: $white;
+    border-image-source: url(../images/response-bubble.png);	
+}
+
+#choices .button, #input-container .button {
+	background-color: $color2;
+}
+
+#input-container .button {
+	border: 0;
+	font-size: rem-calc(16);
+}
+
+#input-container input {
+	font-size: rem-calc(16);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $color1;
+}
+
+#choices {
+	@media #{$small-only} {
+		margin-bottom: 1rem;
+		li { 
+			width: 100%;
+		}
+	}
+}
