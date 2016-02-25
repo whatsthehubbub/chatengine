@@ -13,4 +13,4 @@ Each file contains a conversation object with nodes indexed by a string (in our 
 * "statement" (required) what our bot says. This can be a string, a array of strings or a function (with context) that returns an array of strings.
 * "options" an array of things you can do. Each option contains a choice that the user can select (and then also say) and a consequence that is the next node we move to.
 * "input" replaces options and gives the user an input field. What the user types is stored in the context under name and we move then to consequence.
-* "sideeffect" a function that is executed at the start of the node. Mostly used to set stuff in the context.
+* "sideeffect" a function that is executed at the start of the node. Mostly used to set stuff in the context to refer back to later.
