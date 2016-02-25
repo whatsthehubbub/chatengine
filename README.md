@@ -8,7 +8,7 @@ For local development we recommend using [CodeKit](http://incident57.com/codekit
 
 We use a fake JSON file as our conversation. You can find and edit this file in: js/conversation.js
 
-Each file contains a conversation object with nodes indexed by a string (in our case numbers). A node can contain a bunch of stuff:
+The file contains a conversation object with nodes indexed by a string (in our case numbers). A node can contain a bunch of stuff:
 
 * "statement" (required) what our bot says. This can be a string, a array of strings or a function (with context) that returns an array of strings.
 * "options" an array of things you can do. Each option contains a choice that the user can select (and then also say) and a consequence that is the next node we move to.
