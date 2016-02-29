@@ -8,7 +8,7 @@ Host the files locally with the command: ``python -m SimpleHTTPServer`` and go t
 
 ## Example
 
-
+![example conversation](example.gif)
 
 ## Documentation
 
