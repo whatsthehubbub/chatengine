@@ -4,11 +4,7 @@ Chatengine is a web application to quickly prototype and test chats with. You ca
 
 ## Run
 
-Host the files locally with the command: ``python -m SimpleHTTPServer`` and go to http://localhost:8000/ for a sample conversation.
-
-Built with [Zurb Foundation](http://foundation.zurb.com).
-
-For local development we recommend using [CodeKit](http://incident57.com/codekit/).
+Host the files locally with the command: ``python -m SimpleHTTPServer`` and go to [http://localhost:8000/](http://localhost:8000/) for a sample conversation.
 
 ## Documentation
 
@@ -20,3 +16,9 @@ The file contains a conversation object with nodes indexed by a string (in our c
 * "options" an array of options the user can choose. Each option is rendered as a button that the user can select (and then also say) and a "consequence" which is the next node we move to after.
 * "input" will replace options and give the user an input field. What the user types is stored in the context under "name" and we then move to consequence.
 * "sideeffect" a Javascript function that is executed at the start of a node. We use this mostly to set variables in the context but it could do anything.
+
+## Tools
+
+Built with [Zurb Foundation](http://foundation.zurb.com).
+
+For local development we recommend using [CodeKit](http://incident57.com/codekit/).
