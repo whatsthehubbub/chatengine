@@ -160,7 +160,7 @@ function showStatement(index) {
       var input = $('<input/>', {
         class: 'radius',
         type: 'text',
-        placeholder: 'Bericht',
+        placeholder: 'Message',
         name: option['name']
       }).appendTo(form);
 
@@ -176,7 +176,7 @@ function showStatement(index) {
       });
 
       var button = $('<a/>', {
-        text: "Verzenden",
+        text: "Send",
         "class": "button postfix radius",
         click: checkInput.bind(null, option)
       }).appendTo(buttonDiv);
