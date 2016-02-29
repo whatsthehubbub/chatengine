@@ -1,12 +1,18 @@
-Run with the command: ``make run`` and go to http://localhost:8000/ for a sample conversation.
+# Chatengine
+
+Chatengine is a web application to quickly prototype and test chats with. You can make most conversations by editing the [JSON](http://json.org/)-like file with the conversation definition and host the resulting prototype as a standard mobile website.
+
+## Run
+
+Host the files locally with the command: ``python -m SimpleHTTPServer`` and go to http://localhost:8000/ for a sample conversation.
 
 Built with [Zurb Foundation](http://foundation.zurb.com).
 
 For local development we recommend using [CodeKit](http://incident57.com/codekit/).
 
-# Documentation
+## Documentation
 
-We use a fake JSON file as our conversation. You can find and edit this file in: js/conversation.js
+We use a fake JSON file as our conversation. You can find and edit this file in: ``js/conversation.js``
 
 The file contains a conversation object with nodes indexed by a string (in our case numbers). A node can contain a bunch of stuff:
 
