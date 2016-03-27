@@ -26,3 +26,5 @@ The file contains a conversation object with nodes indexed by a string (in our c
 Built with [Zurb Foundation](http://foundation.zurb.com).
 
 For local development we recommend using [CodeKit](http://incident57.com/codekit/).
+
+The chat bubbles and animated ellipsis were created with [Sketch](http://www.sketchapp.com). The source files can be found in the 'sketch' directory. Export the ellipsis using the 'Generate-GIF' plugin with 'loop 200 ms' as the settings.
