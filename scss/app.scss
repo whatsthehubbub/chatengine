@@ -39,15 +39,9 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-#nextbutton {
-	background-color: $color2;
-}
-
 #conversation-controls {
 	.button {
 		margin-top: 1rem;
-		background-color: $color4;
-		color: $color1;
 	}
 }
 
@@ -81,7 +75,6 @@ footer {
 	bottom: 0;
 	z-index: 100000;
 	width: 100%;
-	background-color: $color4;
 }
 
 footer > div {
@@ -95,7 +88,6 @@ footer > div {
 	    $padding: 0,
 	    $adjust: true
 	);
-	color: $color1;
     border: rem-calc(20) solid transparent;
     -webkit-border-image: url(../images/call-bubble.png) round; /* Safari 3.1-5 */
     -o-border-image: url(../images/call-bubble.png) round; /* Opera 11-12.1 */
@@ -106,12 +98,8 @@ footer > div {
 
 .response-bubble {
 	@extend .call-bubble;	
-	color: $white;
-    border-image-source: url(../images/response-bubble.png);	
-}
-
-#choices .button, #input-container .button {
-	background-color: $color2;
+	color: $black;	
+  border-image-source: url(../images/response-bubble.png);	
 }
 
 #input-container .button {
@@ -121,10 +109,6 @@ footer > div {
 
 #input-container input {
 	font-size: rem-calc(16);
-}
-
-h1, h2, h3, h4, h5, h6 {
-	color: $color1;
 }
 
 #choices {
