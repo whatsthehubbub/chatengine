@@ -1,6 +1,5 @@
 // Pie Chart Variables
-// $pie-color: #f45c5c !default;
-$pie-color: #ee85b5 !default;
+$pie-color: #f45c5c !default;
 
 @mixin darkened-children($num-children, $color) {
   @for $i from 1 through $num-children {

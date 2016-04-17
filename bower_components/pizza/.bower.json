@@ -19,6 +19,5 @@
   },
   "_source": "git://github.com/zurb/pizza.git",
   "_target": "~0.2.1",
-  "_originalSource": "pizza",
-  "_direct": true
+  "_originalSource": "pizza"
 }
